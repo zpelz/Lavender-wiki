@@ -1,0 +1,232 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+h1{
+	font-family: 'Merienda', cursive;
+	font-weight: bold;
+	font-size: 3.5em;
+	border-bottom: 5px solid #453D65;
+	padding-bottom: 0.5em;
+	color: #453D65;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 3px 3px 3px #777777;
+	box-shadow: 0px 15px 10px -15px #111;
+}
+
+h2{
+	font-family: 'Merienda', cursive;
+	color: #453D65;
+	font-size: 2em;
+	margin-top: -0.1em;
+}
+
+p{
+	font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+	background-color: rgba(233, 221, 253, 1);
+}
+
+.home {
+	background-image: url("../img/lav1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+.nomenclature {
+	background-image: url("../img/lav2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.oil {
+	background-image: url("../img/lav4.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+.culinary {
+	background-image: url("../img/lav3.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+.med {
+	background-image: url("../img/lav9.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.cult {
+	background-image: url("../img/lav7.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.etymology {
+	background-image: url("../img/lav8.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.history {
+	background-image: url("../img/lav12.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.other {
+	background-image: url("../img/lav5.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 2.5em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 1200px;
+	padding: 2em;
+	border: 3px solid #2F521C;
+	background-color: rgba(233, 221, 253, 0.85);
+}
+
+.header{
+	border-bottom: 4px solid #eee;
+	line-height: 1.3em;
+	border-color: #E4DB96;
+}
+
+.home .header {
+	border-color: rgba(248, 182, 82, 0.5);
+}
+
+.nomenclature .header{ 
+	border-color: rgba(59, 77, 35, 0.7);
+}
+
+.oil .header {
+	border-color: rgba(198, 137, 62, 0.5);
+}
+
+.culinary .header{ 
+	border-color: rgba(252, 203, 74, 0.5);
+}
+
+.med .header{ 
+	border-color: rgba(65, 25, 58, 0.5);
+}
+
+.cult .header{ 
+	border-color: rgba(84, 59, 61, 0.5);
+}
+
+.etymology .header{ 
+	border-color: rgba(91, 73, 222, 0.5);
+}
+
+.history .header{ 
+	border-color: rgba(233, 167, 112, 0.5);
+}
+
+.other .header{ 
+	border-color: rgba(145, 22, 46, 0.5);
+}
+
+.body {
+	display: grid;
+	grid-template-columns: 2fr 3fr 3fr;
+	grid-gap: 0.5em;
+	margin-top: 1em;
+}
+
+.sidebar li{
+	border-bottom: 3px solid #453D65;
+	border-top: 3px solid #453D65;
+	font-family: 'Cormorant Garamond', serif;
+	border-right-style: dotted;
+	border-left-style: dotted;
+	font-style: italic;
+	border-color: #453D65;
+	grid-column: 1 / 2;
+	width: 90%;
+	max-height: 18em;
+	background-color: rgba(223, 211, 243, 0.9);
+	text-align: center;
+	list-style-type: none;
+	margin: 1em;
+	margin-right: 5em;
+	margin-left: -2em;
+	padding: 0.3em;
+}
+
+a:hover {
+	color: #B47FB4;
+}
+
+.content{
+	font-family: 'Cormorant Garamond', serif;
+	grid-column: 2 / 4;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
